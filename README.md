@@ -41,13 +41,17 @@ Create a trigger for the script to run every X minutes, this will allow for any 
 
 You can create the trigger on the script page at **Edit > Current project's triggers**, the click on **No triggers set up. Click here to add one now.** [More information](https://developers.google.com/apps-script/guides/triggers/installable#managing_triggers_manually)
 
-#### 6. Give Google Assistant access to the personal calendar
-On Google Home app, go to **Account tab (user icon) > More Settings > Services Tab > Calendar** and check your new calendar
+#### 6. Run the script manually once and give permission
+On menu "select function", select *PersonalCalendarSync*, click on the play button once and authorize the script to access your calendars.
 
-#### 7. Run the script manually once and give permission
-On menu "select function", select *PersonalCalendarSync* and click on the play button once and authorize the script to access your calendars.
+At this point, you can check your personal calendar to see if the copied events appeared correctly.
+
+#### 7. Give Google Home access to the new personal calendar
+On Google Home app, go to **Account tab (user icon) > More Settings > Services Tab > Calendar** and check your new calendar
 
 ## How it works
 Every event on a calendar has a unique ID, so everytime this script creates a new event on you personal calendar, it adds a tag (that is only accessible through scripts and is not accessible through calendar application) named `gSuiteEventID` with the ID of the gSuite event that the personal event is mirroing.
+
 With this in mind, for every day in range, the script will check the gSuite events' IDs and compare with the tags on the events on the same day.
+
 If the script will look for the corresponding ID, if it finds a match, it will check if the event needs to be updated and will perform updates. If script doesn't find a personal event with corresponding gSuite ID, it will create a new event and copy its information. If the script finds a personal event that has no corresponding event on gSuite calendar (e.g. when an event is deleted), it will delete the event on the personal calendar.
