@@ -10,7 +10,7 @@ All you need is your gSuite account and a personal gmail account.
 There's no need to have any coding experience to use this script. You basically have to copy this script, update you calendar ID in the code and create a trigger (guide in the references) to run the script periodically. I encourage you to try to follow this guide even if you might be intimidated at first, I am sure you can use this! :)
 
 ### Warnings
-Please create a new calendar in you personal account (as [instructions](#-1.-Create-a-new-calendar-on-your-personal-gmail-account)), because this script creates a perfect mirror of your gSuite - so it **will delete any events in target personal calendar that are not in the gSuite event.**
+Please create a new calendar in you personal account (as [instructions](#1.-Create-a-new-calendar-on-your-personal-gmail-account)), because this script creates a perfect mirror of your gSuite - so it **will delete any events in target personal calendar that are not in the gSuite event.**
 
 ## How to setup code
 
