@@ -100,8 +100,8 @@ function PersonalCalendarSync() {
       }
     }
     
-    //We have experienced duplication of events during midnight
-    //So we will run a function to remove duplicates from personal calendar
+    //We experienced duplication of events during midnight on earlier versions, but have fixed the bug
+    //function is left as comment for reference
     //removeDuplicatedPersonalEvents(personalCalendar,day)
     
     
