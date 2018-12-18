@@ -40,12 +40,12 @@ The default values is 14 days. To change, change the value of `var maxDays = 14`
 #### 5. Create a trigger for the script to run every 1 minute
 Create a trigger for the script to run every X minutes, this will allow for any changes to be reflected frequently on your personal calendar. I have this set as 1 minute intervals to have updates as frequently as I can.
 
-You can create the trigger on the script page at **Edit > Current project's triggers**, the click on **No triggers set up. Click here to add one now.** [More information](https://developers.google.com/apps-script/guides/triggers/installable#managing_triggers_manually)
+You can create the trigger on the script page at **Edit > Current project's triggers**, then click on **No triggers set up. Click here to add one now.** [More information](https://developers.google.com/apps-script/guides/triggers/installable#managing_triggers_manually)
 
 #### 6. Run the script manually once and give permission
 On menu "select function", select *PersonalCalendarSync*, click on the play button once and authorize the script to access your calendars.
 
-At this point, you can check your personal calendar to see if the copied events appeared correctly.
+At this point, you can check your personal calendar to see if copied events were generated correctly.
 
 #### 7. Give Google Home access to the new personal calendar
 On Google Home app, go to **Account tab (user icon) > More Settings > Services Tab > Calendar** and check your new calendar
