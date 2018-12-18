@@ -21,7 +21,7 @@ Note that events not included on gSuite accout will be deleted from the personal
 
 #### 2. Share the new calendar with gSuite account (with option to make changes)
 Share the new calendar with gSuite account. The sharing option must be allow gSuite to "make changes to events".
-[step by step instructions](https://support.google.com/calendar/answer/37082?hl=en)
+[Step by step instructions](https://support.google.com/calendar/answer/37082?hl=en)
 
 #### 3. Get the Calendar ID of the personal calendar 
 Get the **Calendar ID** of the personal calendar where you'll store the gSuite events.
@@ -38,7 +38,7 @@ The default values is 14 days. To change, change the value of `var maxDays = 14`
 
 
 #### 5. Create a trigger for the script to run every 1 minute
-Create a trigger for the script to run every X minutes, this will allow for any changes to be reflected frequently on your personal calendar. I have this seted as 1 minute intervals to have updates as frequently as I can.
+Create a trigger for the script to run every X minutes, this will allow for any changes to be reflected frequently on your personal calendar. I have this set as 1 minute intervals to have updates as frequently as I can.
 
 You can create the trigger on the script page at **Edit > Current project's triggers**, the click on **No triggers set up. Click here to add one now.** [More information](https://developers.google.com/apps-script/guides/triggers/installable#managing_triggers_manually)
 
