@@ -52,6 +52,6 @@ On Google Home app, go to **Account tab (user icon) > More Settings > Services T
 ## How it works
 Every event on a calendar has a unique ID, so everytime this script creates a new event on you personal calendar, it adds a tag (that is only accessible through scripts and is not accessible through calendar application) named `gSuiteEventID` with the ID of the gSuite event that the personal event is mirroing.
 
-With this in mind, for every day in range, the script will check the gSuite events' IDs and compare with the tags on the events on the same day.
+With this in mind, for every day in range, the script will get all event IDs in gSuite calendar and compare with the tags on the events in the personal calendar for the same day.
 
-If the script will look for the corresponding ID, if it finds a match, it will check if the event needs to be updated and will perform updates. If script doesn't find a personal event with corresponding gSuite ID, it will create a new event and copy its information. If the script finds a personal event that has no corresponding event on gSuite calendar (e.g. when an event is deleted), it will delete the event on the personal calendar.
+If the script finds a matching tag, it will check if the event needs to be updated and will perform updates. If script doesn't find a personal event with corresponding gSuite ID, it will create a new event, copy its information and add the tag. If the script finds a personal event that has no corresponding event on gSuite calendar (e.g. when an event is deleted), it will delete the event on the personal calendar.
