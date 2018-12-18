@@ -1,6 +1,7 @@
 # gSuiteCalendarSync
 ## Project goal
-This script was created as a temporary workarround for current Google Home limitation to access gSuite calendars (as of December 2018 Google Home won't access gSuite calendars).
+This script was created as a temporary workarround for current Google Home limitation to access gSuite calendars (as of December 2018 Google Home won't access gSuite calendars). This script creates a copy of your gSuite calendar on a personal calendar in order for Google Home to access it (only sharing the gSuite calendar is not enough to make Google Home able to access it).
+
 ### Workaround
 This script mirrors your gSuite Calendar on a personal calendar on your gmail account. This script will automatically create, update and delete events on your personal calendar according to changes made in the gSuite account. By creating execution time trigger (for example every 1 one minute), the calendar is kept up to date.
 
