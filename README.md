@@ -13,22 +13,22 @@ Please create a new calendar in you personal account (as per instructions), beca
 
 ## How to setup code
 
-##### 1. Create a new calendar on your personal gmail account
+#### 1. Create a new calendar on your personal gmail account
 This calendar is where you will store a copy of your gSuite events. [step by step instructions](https://support.google.com/calendar/answer/37095?hl=en)
 
 Note that events not included on gSuite accout will be deleted from the personal calendar. To avoid any losses, create a new calendar in the gmail account.
 
-##### 2. Share the new calendar with gSuite account (with option to make changes)
+#### 2. Share the new calendar with gSuite account (with option to make changes)
 Share the new calendar with gSuite account. The sharing option must be allow gSuite to "make changes to events".
 [step by step instructions](https://support.google.com/calendar/answer/37082?hl=en)
 
-##### 3. Get the Calendar ID of the personal calendar 
+#### 3. Get the Calendar ID of the personal calendar 
 Get the **Calendar ID** of the personal calendar where you'll store the gSuite events.
 You can find it in the same page that you can share the calendar, scrolling down to the item **Integrate Calendar** 
 (Hover over personal calendar > click the three vertical dots > settings and sharing)
 
 
-##### 4. Create a new Google Script project, copy code.gs and replace the "personal calendar ID"
+#### 4. Create a new Google Script project, copy code.gs and replace the "personal calendar ID"
 Create a [New Google Scrip Project](https://script.google.com/intro) **on your gSuite account** and paste the code.gs file.
 Locate the text `<Personal calendar ID>` and replace it with the ID you copied from previous step. Be sure to keep the quote marks around the ID.
 
@@ -36,9 +36,9 @@ At this step, you can also change how many days in the future the script will co
 The default values is 14 days. To change, change the value of `var maxDays = 14` (line 15) to how many days you want -- big numbers may cause performance issues.
 
 
-##### 5. Create a trigger for the script to run every 1 minute
+#### 5. Create a trigger for the script to run every 1 minute
 Create a trigger for the script to run every X minutes, this will allow for any changes to be reflected frequently on your personal calendar. I have this seted as 1 minute intervals to have updates as frequently as I can.
 You can create the trigger on the script page at **Edit > Current project's triggers**, the click on **No triggers set up. Click here to add one now.** [More information](https://developers.google.com/apps-script/guides/triggers/installable#managing_triggers_manually)
 
-##### 6. Give Google Assistant access to the personal calendar
+#### 6. Give Google Assistant access to the personal calendar
 On Google Home app, go to **Account tab (user icon) > More Settings > Services Tab > Calendar** and check your new calendar
